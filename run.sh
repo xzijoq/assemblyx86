@@ -4,6 +4,9 @@ then
     echo cleaning
     rm -r *.o
     rm -r *.out
+    rm -r *.lst
+    rm -r \#*
+    rm -r *~
 elif [[ $1 = git ]]
 then
     git add .
