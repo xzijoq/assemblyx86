@@ -1,6 +1,8 @@
 * links
 ** https://www.youtube.com/watch?v=wLXIWKUWpSs&list=PLmxT2pVYo5LB5EzTPZGfFN0c2GDiSXgQe
 
+** https://www.youtube.com/playlist?list=PLetF-YjXm-sCH6FrTz4AQhfH6INDQvQSn
+
 * thingies video
 ** set of language, varies by assembler, no abstraction over cpu 
 ** stack is implemented as array in memory??!!
@@ -8,3 +10,19 @@
 
 * general 
 ** using nasm as assembler, synrax varies by assembler
+
+* notes
+** syscall is fast system call conventions
+** 32 bit and 64 bit vary singinficantly 
+** db stands for define bytes wow
+** in data segment the msg lbl is replaceed by its memory address
+** .bss memory reserved for later use
+** nsam macro expantion %%Lable generate a uniquie lbl every time so that no redfined thingies happen, but prolly such labls are only usefull inside that expantion
+** equ is for constants (for syscalls all of em)
+** %include fuck me babay one more time
+** before division empty rdx to 0 or it will concatanate with rax to form a massive 128 bit register, also rdx holds the remainder of the division after operation fuck
+** in command line aruments potinters to the arguments ,which are strings not integers, zero terminated are pushed to stack with the top of the stack being the nuber of arguments
+** the first argument is *path (to current file?) which is provided by os so user args start with arg[1] thats why argc the nuber of arguments is always 1
+** arguments can be shell operation ./yada.out 'ls' will pass list of all files as arguments
+** sys_nanosleep 35 ... persisin to nano seconds a billionth 10^-9
+
